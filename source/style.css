@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary */
+    --light-red: hsl(356, 100%, 66%);
+    --VL-red: hsl(355, 100%, 74%);
+    --VD-blue: hsl(208, 49%, 24%);
+
+    /* Neutral */
+    --white: hsl(0, 0%, 100%);
+    --grayish-blue: hsl(240, 2%, 79%);
+    --VD-grayish-blue: hsl(207, 13%, 34%);
+    --VD-black-blue: hsl(240, 10%, 16%);
+
+    /* Gradient */
+    --VL-red-gradient: hsl(13, 100%, 72%);
+    --light-red-gradient: hsl(353, 100%, 62%);
+    /* ############ */
+    --VD-gray-blue: hsl(237, 17%, 21%);
+    --VD-desaturated-blue: hsl(237, 23%, 32%);
+}
+body {
+    background-color: gray;
+}
+
+img {
+    width: 100%;
+}
