@@ -15,9 +15,17 @@ let connect = document.querySelector(".connect");
 let connectArrow = document.querySelector(".connect svg");
 let connectContent = document.querySelector(".connect-content");
 
+let headerProductP = document.querySelector(".header-product p"); //###
+let headerProductArrow = document.querySelector(".header-product svg");
+let productDropdown = document.querySelector(".product-dropdown");
 
+let headerCompanyP = document.querySelector(".header-company p");
+let headerCompanyArrow = document.querySelector(".header-company svg");
+let companyDropdown = document.querySelector(".company-dropdown");
 
-
+let headerConnectP = document.querySelector(".header-connect p");
+let headerConnectArrow = document.querySelector(".header-connect svg");
+let connectDropdown = document.querySelector(".connect-dropdown");
 
 
 hamMenu.addEventListener("click", function() {
@@ -72,4 +80,31 @@ hamClose.addEventListener("click", function() {
     if (connectContent.classList.contains("open")) {
         connect.click();
     }
+});
+
+// ###############################################################################################
+
+headerProductP.addEventListener("click", function() {
+    productDropdown.classList.toggle("opened-menu");
+    headerProductArrow.classList.toggle("rotate-180");
+
+    companyDropdown.classList.remove("opened-menu");
+    connectDropdown.classList.remove("opened-menu");
+
+});
+headerCompanyP.addEventListener("click", function() {
+    companyDropdown.classList.toggle("opened-menu");
+    headerCompanyArrow.classList.toggle("rotate-180");
+
+    productDropdown.classList.remove("opened-menu");
+    connectDropdown.classList.remove("opened-menu");
+
+});
+headerConnectP.addEventListener("click", function() {
+    connectDropdown.classList.toggle("opened-menu");
+    headerConnectArrow.classList.toggle("rotate-180");
+
+    productDropdown.classList.remove("opened-menu");
+    companyDropdown.classList.remove("opened-menu");
+
 });
