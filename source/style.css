@@ -35,13 +35,11 @@
         --UBUNTU-weight-3: 700;
 }
 
-
-
 /* STARTING EXECUTING !! */
 
 .hero {
     position: relative;
-    min-height: 85vh;
+    min-height: 79vh;
     background: url(../images/mobile/bg-pattern-intro-mobile.svg), linear-gradient(to top, var(--light-red-gradient), var(--VL-red-gradient));
     background-repeat: no-repeat;
     background-size: auto;
@@ -50,7 +48,6 @@
     background-position-y: 37%;
     padding: 50px 20px;
 }
-
 header {
     display: flex;
     align-items: center;
@@ -75,7 +72,6 @@ header .ham .ham-icon {
 .display-none {
     display: none;
 }
-
 
 .hero-container {
     position: absolute;
@@ -148,11 +144,9 @@ nav {
     background-color: var(--white);
     font-family: var(--OVERPASS);
     font-weight: var(--OVERPASS-weight-2);
-
     transform: scaleY(0);
     transform-origin: top;
     transition: 0.3s;
-    
     display: flex;
     align-content: center;
     align-items: center;
@@ -187,7 +181,6 @@ nav {
 .content .product-content a:hover, .content .company-content a:hover, .content .connect-content a:hover {
     color: black;
 }
-
 .content a {
     color: var(--VD-gray-blue);
     user-select: none;
@@ -287,13 +280,11 @@ a {
 
 .phones {
     position: relative;
-
     background-image: url(../images/bg-pattern-circles.svg);
     background-size: 130vw;
     background-position-x: center;
     background-position-y: -50vw;
     background-repeat: no-repeat;
-
     padding: 50vw 20px 27vw;
     border-top-right-radius: 100px;
     border-bottom-left-radius: 100px;
@@ -387,6 +378,12 @@ footer > a {
     color: var(--white);
 }
 
+@media (max-width: 991px) {
+    .hero {
+        min-height: 420px;
+        height: 79vh;
+    }
+}
 
 
 /* MEDIA QUERY & DESKTOP VERSION */
@@ -399,16 +396,19 @@ footer > a {
     font-weight: var(--UBUNTU-weight-3);
     color: #ddd;
 }
+.header-links p {
+    min-width: 89.5px;
+}
 .header-links svg {
     transition: 0.3s;
     margin-left: 3px;
 }
-
 .header-links-wrapper {
     display: none;
 }
 .header-form {
     display: none;
+    min-width: 195px;
 }
 
 .product-dropdown, .company-dropdown, .connect-dropdown {
@@ -467,6 +467,8 @@ picture {
     }
 
     .hero {
+        min-height: 550px;
+        height: 79vh;
         background: url(../images/desktop/bg-pattern-intro-desktop.svg), linear-gradient(to left, var(--light-red-gradient), var(--VL-red-gradient));
         background-position-x: 28%;
         background-position-y: center;
@@ -497,8 +499,6 @@ picture {
     .header-product p:hover path, .header-company p:hover path, .header-connect p:hover path {
         fill: white;
     }
-
-    
     .header-form {
         display: block;
     }
@@ -553,7 +553,6 @@ picture {
         margin-left: 5vw;
     }
 
-
     .phones {
         display: flex;
         flex-direction: row-reverse;
@@ -566,6 +565,13 @@ picture {
     }
     .phones-text-container {
         max-width: 40vw;
+    }
+    .phones-text-container h1 {
+        text-align: left;
+    }
+    .phones-text-container p {
+        padding-left: 0;
+        text-align: left;
     }
     .phones img {
         width: 37vw;
@@ -624,5 +630,26 @@ picture {
     footer .links-wrapper a:hover {
         text-decoration: underline;
     }
+}
 
+@media (min-width:1200px) and (max-width:1440px) {
+    .phones img {
+        width: 40vw;
+    }
+}
+@media (min-width:1100px) and (max-width:1199px) {
+    .phones {
+        padding-right: 80px;
+    }
+    .phones img {
+        width: 45vw;
+    }
+}
+@media (min-width:992px) and (max-width:1099px) {
+    .phones {
+        padding-block: 57px;
+    }
+    .phones img {
+        width: 42vw;
+    }
 }

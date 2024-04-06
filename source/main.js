@@ -155,11 +155,6 @@ headerConnectP.addEventListener("click", function() {
 });
 
 
-
-
-
-
-
 window.addEventListener("resize", function() {
     console.log(this.window.innerWidth);
     if (this.window.innerWidth < 992) {
@@ -174,9 +169,8 @@ window.addEventListener("resize", function() {
         headerProductArrow.classList.remove("rotate-180");
         headerCompanyArrow.classList.remove("rotate-180");
         headerConnectArrow.classList.remove("rotate-180");
-
-
     }
+
     if (this.window.innerWidth > 991) {
         if (content.classList.contains("opened-menu")) {
             hamMenu.click();
@@ -191,5 +185,4 @@ window.addEventListener("resize", function() {
             }
         }
     }
-    
 })
